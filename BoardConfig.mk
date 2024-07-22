@@ -29,6 +29,10 @@
 # Recovery
 TARGET_OTA_ASSERT_DEVICE := corvette
 
+# Theme
+TW_Y_OFFSET := 124
+TW_H_OFFSET := -124
+
 # TWRP specific build flags
 TW_FRAMERATE := 120
 
