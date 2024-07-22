@@ -16,9 +16,6 @@
 #
 # Only the below variable(s) need to be changed!
 #
-# Identifier for common folder
-COMMON_SOC := sm86xx
-
 # Define hardware platform
 PRODUCT_PLATFORM := pineapple
 
@@ -53,9 +50,6 @@ PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
-
-# Common path for device trees
-COMMON_PATH := device/$(PRODUCT_BRAND)/$(COMMON_SOC)-common
 
 # Device path for OEM device tree
 DEVICE_PATH := device/$(PRODUCT_BRAND)/$(PRODUCT_DEVICE)
