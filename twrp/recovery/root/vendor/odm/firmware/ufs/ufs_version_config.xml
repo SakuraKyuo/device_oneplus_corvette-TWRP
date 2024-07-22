@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<FIRMWARE>
+		<File name="HN8T374ZJKX075" manufacturer="SKhynix" target_version="A300"></File>
+		<File name="HN8T374ZJKX130" manufacturer="SKhynix" target_version="A300"></File>
+		<File name="HN8T374ZJKX141" manufacturer="SKhynix" target_version="A300"></File>
+		<File name="MT001TAYAX8U40" manufacturer="MICRON" target_version="0106"></File>
+		<File name="KLUFG4NHHB-F0G1" manufacturer="SAMSUNG" target_version="0400"></File>
+</FIRMWARE>
+

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-    <version>2023110201</version>
+    <version>2024030201</version>
     <device id = "0">
         <panel id = "0" name="tp/22825/FW_S3910_BOE_HBP.img">
             <modules id="PreventionConfig" enable="true" hint="">
@@ -16,6 +16,9 @@
                 <param name="prevention,updelay_time_ms" type="u32" hint="" >
                     <value>30</value>
                 </param>
+                <param name="prevention,makeup_cnt_weight" type="u32" hint="" >
+                    <value>4,1,2,2,2</value>
+                </param>
                 <param name="prevention,large_corner_range" type="u32" hint="" >
                     <value>2560,6336</value>
                 </param>
@@ -23,7 +26,7 @@
                     <value>500,400,2377,6,6</value>
                 </param>
                 <param name="prevention,trx_reject_condition" type="u32" hint="" >
-                    <value>9,8,8</value>
+                    <value>8,7,7</value>
                 </param>
                 <param name="prevention,large_judge_time_ms" type="u32" hint="" >
                     <value>500,50,30</value>
@@ -38,13 +41,13 @@
                     <value>10,300</value>
                 </param>
                 <param name="prevention,long_edge_condition" type="u32" hint="" >
-                    <value>179,90,120,80</value>
+                    <value>159,80,110,90</value>
                 </param>
                 <param name="prevention,long_fingerhold_condition" type="u32" hint="" >
                     <value>50,6,4,4</value>
                 </param>
                 <param name="prevention,short_edge_condition" type="u32" hint="" >
-                    <value>179,90,120,80</value>
+                    <value>159,80,110,90</value>
                 </param>
                 <param name="prevention,top_corner_config" type="u32" hint="" >
                     <value>936,2780,1000</value>
@@ -53,7 +56,7 @@
                     <value>640,2534</value>
                 </param>
                 <param name="prevention,trx_strict_reject_condition" type="u32" hint="" >
-                    <value>8,7,7</value>
+                    <value>8,6,6</value>
                 </param>
                 <param name="prevention,long_strict_edge_condition" type="u32" hint="" >
                     <value>160,60</value>
@@ -74,7 +77,7 @@
                     <value>1</value>
                 </param>
                 <param name="prevention,long_fingerhold_condition2" type="u32" hint="" >
-                    <value>1300,3657,0,0</value>
+                    <value>1300,3657,0,1</value>
                 </param>
                 <param name="prevention,top_corner_config2" type="u32" hint="" >
                     <value>3,80,600,1124,0</value>
@@ -104,7 +107,7 @@
                     <value>1,640,4224,746</value>
                 </param>
                 <param name="prevention,edge_sliding_matched_support" type="u32" hint="" >
-                    <value>1,200,3,0</value>
+                    <value>1,200,3,1</value>
                 </param>
                 <param name="prevention,reclining_mode_support" type="u32" hint="" >
                     <value>1</value>
@@ -128,7 +131,7 @@
                     <value>1,150,3,0</value>
                 </param>
                 <param name="prevention,long_edge_condition_recli" type="u32" hint="" >
-                    <value>179,90,120,80</value>
+                    <value>159,80,110,90</value>
                 </param>
             </modules>
             <modules id="TouchConfig" enable="true" hint="">
@@ -184,6 +187,9 @@
                 </param>
                 <param name="prevention,updelay_time_ms" type="u32" hint="" >
                     <value>30</value>
+                </param>
+                <param name="prevention,makeup_cnt_weight" type="u32" hint="" >
+                    <value>4,1,2,2,2</value>
                 </param>
                 <param name="prevention,large_corner_range" type="u32" hint="" >
                     <value>2560,6336</value>

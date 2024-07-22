@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<algo>
+    <version>2024050702</version>
+    <device id = "0">
+        <panel id = "0" name="tp/24211/FW_S3910_TIANMA_HBP.img">
+            <modules id="AlgoParam" enable="true" hint="">
+                <param name="prjId" type="u32" hint="">
+                    <value>24211</value>
+                    <range>0,65530</range>
+                </param>
+                <param name="rxNumUse" type="u32" hint="">
+                    <value>36</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="txNumUse" type="u32" hint="">
+                    <value>16</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="maxMappingX" type="u32" hint="">
+                    <value>19839</value>
+                    <range>0,30000</range>
+                </param>
+
+                <param name="maxMappingY" type="u32" hint="">
+                    <value>44351</value>
+                    <range>0,60000</range>
+                </param>
+            </modules>
+            <modules id="Touch Threshold" enable="true" hint="">
+                <param name="posPeakThd" type="u32" hint="">
+                    <value>180</value>
+                    <range>0,300</range>
+                </param>
+            </modules>
+            <modules id="Coord" enable="true" hint="">
+                <param name="leftEdgeGain" type="u32" hint="">
+                    <value>182</value>
+                    <range>0,512</range>
+                </param>
+                <param name="rightEdgeGain" type="u32" hint="">
+                    <value>182</value>
+                    <range>0,512</range>
+                </param>
+                <param name="leftSecondEdgeGain" type="u32" hint="">
+                    <value>200</value>
+                    <range>0,512</range>
+                </param>
+                <param name="rightSecondEdgeGain" type="u32" hint="">
+                    <value>200</value>
+                    <range>0,512</range>
+                </param>
+                <param name="leftEdgeScale" type="u32" hint="">
+                    <value>18</value>
+                    <range>0,512</range>
+                </param>
+                <param name="rightEdgeScale" type="u32" hint="">
+                    <value>18</value>
+                    <range>0,512</range>
+                </param>
+                <param name="upEdgeGain" type="u32" hint="">
+                    <value>256</value>
+                    <range>0,512</range>
+                </param>
+                <param name="downEdgeGain" type="u32" hint="">
+                    <value>256</value>
+                    <range>0,512</range>
+                </param>
+                <param name="rowGain" type="u32" hint="">
+                    <value>256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="colGain" type="u32" hint="">
+                    <value>256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="rowCompensate" type="u32" hint="">
+                    <value>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-40,-60</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="colCompensate" type="u32" hint="">
+                    <value>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="pixelGainRows" type="u32" hint="">
+                    <value>256,256,256,256,256,256,256,256,256,256</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="pixelGainCols" type="u32" hint="">
+                    <value>256,256,256,256,256,256,256,256,256,256</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="pixelGain" type="u32" hint="">
+                    <value>256,256,256,256,256,256,256,256,256,256</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="upSecondEdgeGain" type="u32" hint="">
+                    <value>256</value>
+                    <range>0,512</range>
+                </param>
+                <param name="downSecondEdgeGain" type="u32" hint="">
+                    <value>200</value>
+                    <range>0,512</range>
+                </param>
+                <param name="upEdgeScale" type="u32" hint="">
+                    <value>18</value>
+                    <range>0,512</range>
+                </param>
+                <param name="downEdgeScale" type="u32" hint="">
+                    <value>22</value>
+                    <range>0,512</range>
+                </param>
+            </modules>
+            <modules id="FeatureEn" enable="true" hint="">
+                <param name="WATER_ENABLE" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="ANTI_MISTOUCH_ENABLE" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="FP_ENABLE" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="HARD_PRESSURE_ENABLE" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="NOISE_ENABLE" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="TEMPERATURE_PROC_EN" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="GAME_TOUCH_OPT_EN" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="ROW_GAIN_EN" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="COL_GAIN_EN" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="PIXEL_GAIN_EN" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="NOTCH_GAIN_EN" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+            </modules>
+            <modules id="PeakFilter" enable="true" hint="">
+                <param name="isolatedAroundSumNorThd" type="u32" hint="">
+                    <value>89</value>
+                    <range>0,3000</range>
+                </param>
+                <param name="isolatedAroundSumGameThd" type="u32" hint="">
+                    <value>70</value>
+                    <range>0,3000</range>
+                </param>
+                <param name="isolatedAroundSumNoiseThd" type="u32" hint="">
+                    <value>167</value>
+                    <range>0,3000</range>
+                </param>
+                <param name="isolatedAroundSumTempThd" type="u32" hint="">
+                    <value>167</value>
+                    <range>0,3000</range>
+                </param>
+                <param name="isolatedAroundSumWaterThd" type="u32" hint="">
+                    <value>167</value>
+                    <range>0,3000</range>
+                </param>
+                <param name="sweatWaterAroundSumThd" type="u32" hint="">
+                    <value>960</value>
+                    <range>0,3000</range>
+                </param>
+                <param name="sweatWaterDiffMaxRatio" type="u32" hint="">
+                    <value>3</value>
+                    <range>0,100</range>
+                </param>
+            </modules>
+            <modules id="LogLevel" enable="true" hint="">
+                <param name="paramLogLevel" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,10</range>
+                </param>
+            </modules>
+            <modules id="CoordFilter" enable="true" hint="">
+                <param name="moveLockMin" type="u32" hint="">
+                    <value>3</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="pixelPitchUsed" type="u32" hint="">
+                    <value>564</value>
+                    <range>0,2500</range>
+                </param>
+
+                <param name="noiseLength" type="u32" hint="">
+                    <value>1050</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="fingerLength" type="u32" hint="">
+                    <value>2256</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="relockLength" type="u32" hint="">
+                    <value>1058</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="liftLockLength" type="u32" hint="">
+                    <value>1410</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="disOffsetCutThd" type="u32" hint="">
+                    <value>30</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="disOffsetCutCoef" type="u32" hint="">
+                    <value>10</value>
+                    <range>0,255</range>
+                </param>
+
+                <param name="alphaRatio" type="u32" hint="">
+                    <value>1024</value>
+                    <range>0,3000</range>
+                </param>
+
+                <param name="alphaWaterRatio" type="u32" hint="">
+                    <value>300</value>
+                    <range>0,3000</range>
+                </param>
+
+                <param name="pushEdgeSpeedThd" type="u32" hint="">
+                    <value>150</value>
+                    <range>0,500</range>
+                </param>
+
+                <param name="rouletteRatio" type="u32" hint="">
+                    <value>23</value>
+                    <range>0,100</range>
+                </param>
+                <param name="preventUTurnDis" type="u32" hint="">
+                    <value>160</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="moveLockNoGameMode" type="u32" hint="">
+                    <value>6</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="edgeUnlockAlphaRatio" type="u32" hint="">
+                    <value>50</value>
+                    <range>0,100</range>
+                </param>
+
+                <param name="sensitiveRelockLength" type="u32" hint="">
+                    <value>850</value>
+                    <range>0,100</range>
+                </param>
+
+                <param name="sensitiveRelockTime" type="u32" hint="">
+                    <value>1800</value>
+                    <range>0,100</range>
+                </param>
+
+                <param name="sensitiveEnterRelockLength" type="u32" hint="">
+                    <value>160</value>
+                    <range>0,100</range>
+                </param>
+                <param name="lockMinRange" type="u32" hint="">
+                    <value>149</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="lockEndTime" type="u32" hint="">
+                    <value>170</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="landLockTimes" type="u32" hint="">
+                    <value>120</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="relockTime" type="u32" hint="">
+                    <value>250</value>
+                    <range>0,1000</range>
+                </param>
+            </modules>
+            <modules id="Water" enable="true" hint="">
+                <param name="mergeBeforeMatchThd" type="u32" hint="">
+                    <value>3840</value>
+                    <range>0,12800</range>
+                </param>
+                <param name="mergeAfterMatchThd" type="u32" hint="">
+                    <value>5120</value>
+                    <range>0,12800</range>
+                </param>
+                <param name="normalMgAfMatchTdh" type="u32" hint="">
+                    <value>3000</value>
+                    <range>0,12800</range>
+                </param>
+                <param name="scWaterSignalThd" type="u32" hint="">
+                    <value>150</value>
+                    <range>0,512</range>
+                </param>
+                <param name="waterNoiseThd" type="u32" hint="">
+                    <value>60</value>
+                    <range>0,512</range>
+                </param>
+                <param name="mcWaterThd" type="u32" hint="">
+                    <value>-50</value>
+                    <range>-1000,1000</range>
+                </param>
+                <param name="scWsDetNormalThd" type="u32" hint="">
+                    <value>450</value>
+                    <range>0,10000</range>
+                </param>
+                <param name="scWsDetWaterThd" type="u32" hint="">
+                    <value>150</value>
+                    <range>0,10000</range>
+                </param>
+                <param name="waterDetType" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,100</range>
+                </param>
+                <param name="waterProcType" type="u32" hint="">
+                    <value>2</value>
+                    <range>0,100</range>
+                </param>
+                <param name="waterDetScAbnormalThd" type="u32" hint="">
+                    <value>-400</value>
+                    <range>0,100</range>
+                </param>
+                <param name="waterDetScWaterTailThd" type="u32" hint="">
+                    <value>90</value>
+                    <range>0,100</range>
+                </param>
+                <param name="waterDetRectNegRatioThd" type="u32" hint="">
+                    <value>2</value>
+                    <range>0,100</range>
+                </param>
+                <param name="waterDetNoiseRectNegRatioThd" type="u32" hint="">
+                    <value>5</value>
+                    <range>0,100</range>
+                </param>
+            </modules>
+            <modules id="Temperature" enable="true" hint="">
+                <param name="posNegRatioThd" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,10</range>
+                </param>
+                <param name="posFastUpdateSelfNodeThd" type="u32" hint="">
+                    <value>90</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="posPeakTsThd" type="u32" hint="">
+                    <value>215</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="touchDownTsThd" type="u32" hint="">
+                    <value>250</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="diffReduce" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1000</range>
+                </param>
+            </modules>
+            <modules id="PeakMerge" enable="true" hint="">
+                <param name="multipleFingerMergeThd" type="u32" hint="">
+                    <value>9</value>
+                    <range>0,100</range>
+                </param>
+                <param name="oneFingerMergeThd" type="u32" hint="">
+                    <value>37</value>
+                    <range>0,100</range>
+                </param>
+                <param name="edgePixelRatioThd" type="u32" hint="">
+                    <value>50</value>
+                    <range>0,100</range>
+                </param>
+                <param name="aftPointThd" type="u32" hint="">
+                    <value>200</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="edgeGripNodeCntThd" type="u32" hint="">
+                    <value>3</value>
+                    <range>0,100</range>
+                </param>
+            </modules>
+            <modules id="FP" enable="true" hint="">
+                <param name="fpSpotCenterX" type="u32" hint="">
+                    <value>9920</value>
+                    <range>0,20000</range>
+                </param>
+
+                <param name="fpSpotCenterY" type="u32" hint="">
+                    <value>40176</value>
+                    <range>0,50000</range>
+                </param>
+
+                <param name="fpSpotRxStart" type="u32" hint="">
+                    <value>31</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="fpSpotRxEnd" type="u32" hint="">
+                    <value>34</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="fpSpotTxStart" type="u32" hint="">
+                    <value>6</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="fpSpotTxEnd" type="u32" hint="">
+                    <value>9</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="fpSpotRadius" type="u32" hint="">
+                    <value>4500</value>
+                    <range>0,2500</range>
+                </param>
+                <param name="fpValidRadius" type="u32" hint="">
+                    <value>6080</value>
+                    <range>0,65000</range>
+                </param>
+                <param name="touchFpAreaNumThd" type="u32" hint="">
+                    <value>10</value>
+                    <range>0,50</range>
+                </param>
+                <param name="touchFpUpAreaNumThd" type="u32" hint="">
+                    <value>3</value>
+                    <range>0,50</range>
+                </param>
+                <param name="fpPixelDiffThd" type="u32" hint="">
+                    <value>100</value>
+                    <range>0,3000</range>
+                </param>
+            </modules>
+            <modules id="Noise" enable="true" hint="">
+                <param name="noiseEdgeSpreadThd" type="u32" hint="">
+                    <value>130</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="noiseNoiseFloorThd" type="u32" hint="">
+                    <value>95</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="posPeakNoiseThd" type="u32" hint="">
+                    <value>160</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="touchDownNoiseThd" type="u32" hint="">
+                    <value>243</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="noiseRatioLimit" type="u32" hint="">
+                    <value>14</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="noiseAccLimit" type="u32" hint="">
+                    <value>15360</value>
+                    <range>0,60000</range>
+                </param>
+                <param name="noiseDownTimerThd" type="u32" hint="">
+                    <value>2</value>
+                    <range>0,100</range>
+                </param>
+                <param name="noiseUpTimerThd" type="u32" hint="">
+                    <value>4</value>
+                    <range>0,100</range>
+                </param>
+                <param name="noiseLeftEdgeScale" type="u32" hint="">
+                    <value>20</value>
+                    <range>0,100</range>
+                </param>
+                <param name="noiseRightEdgeScale" type="u32" hint="">
+                    <value>20</value>
+                    <range>0,100</range>
+                </param>
+                <param name="noiseHugeLevelThd" type="u32" hint="">
+                    <value>350</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="noiseProcCoordOptType" type="u32" hint="">
+                    <value>4</value>
+                    <range>0,1000</range>
+                </param>
+            </modules>
+            <modules id="AFT" enable="true" hint="">
+                <param name="sensorRatioThd" type="u32" hint="">
+                    <value>10</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="sensorWidthThd" type="u32" hint="">
+                    <value>30</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="secondEdgeNoneSumCoef" type="u32" hint="">
+                    <value>31000</value>
+                    <range>0,65535</range>
+                </param>
+                <param name="neighborNodeThd" type="u32" hint="">
+                    <value>60</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="aftTxDirNodeNumThd" type="u32" hint="">
+                    <value>7</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="aftPosNodeThd" type="u32" hint="">
+                    <value>90</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="aftCornerDiffPercent" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1000</range>
+                </param>
+            </modules>
+            <modules id="Palm" enable="true" hint="">
+                <param name="palmGraySizeThd" type="u32" hint="">
+                    <value>38</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="palmBigGraySizeThd" type="u32" hint="">
+                    <value>50</value>
+                    <range>0,300</range>
+                </param>
+                <param name="palmPosNodeThd" type="u32" hint="">
+                    <value>150</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="palmNegNodeThd" type="u32" hint="">
+                    <value>150</value>
+                    <range>0,65535</range>
+                </param>
+                <param name="palmSumNodeThd" type="u32" hint="">
+                    <value>200</value>
+                    <range>0,65535</range>
+                </param>
+                <param name="palmPosThd" type="u32" hint="">
+                    <value>180</value>
+                    <range>0,65535</range>
+                </param>
+                <param name="palmNegThd" type="u32" hint="">
+                    <value>-180</value>
+                    <range>-3000,3000</range>
+                </param>
+                <param name="palmPosThdSc" type="u32" hint="">
+                    <value>250</value>
+                    <range>0,65535</range>
+                </param>
+                <param name="palmNegThdSc" type="u32" hint="">
+                    <value>-250</value>
+                    <range>-3000,3000</range>
+                </param>
+                <param name="palmGradThd" type="u32" hint="">
+                    <value>126</value>
+                    <range>-3000,3000</range>
+                </param>
+            </modules>
+            <modules id="NEW_POINT_THD" enable="true" hint="">
+                <param name="scNormalNewPointThd" type="u32" hint="">
+                    <value>150</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="scNoiseNewPointThd" type="u32" hint="">
+                    <value>150</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="scWaterNewPointThd" type="u32" hint="">
+                    <value>150</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="scTemperatureNewPointThd" type="u32" hint="">
+                    <value>150</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="mcNormalNewPointThd" type="u32" hint="">
+                    <value>225</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="mcNoiseNewPointThd" type="u32" hint="">
+                    <value>225</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="mcWaterNewPointThd" type="u32" hint="">
+                    <value>225</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="mcTemperatureNewPointThd" type="u32" hint="">
+                    <value>225</value>
+                    <range>0,1000</range>
+                </param>
+            </modules>
+            <modules id="Notch" enable="true" hint="">
+                <param name="NotchSensorNum" type="u32" hint="">
+                    <value>4</value>
+                    <range>0,8</range>
+                </param>
+                <param name="NotchSensor0" type="u32" hint="">
+                    <value>8,0,256,0,0,0,0</value> <!-- TX, RX, peak补偿, peak up补偿值, peak down补偿值, peak left补偿值, peak right补偿值 -->
+                    <range>0,512</range>
+                </param>
+                <param name="NotchSensor1" type="u32" hint="">
+                    <value>9,0,256,0,0,0,0</value>
+                    <range>0,512</range>
+                </param>
+                <param name="NotchSensor2" type="u32" hint="">
+                    <value>8,1,256,0,0,40,0</value>
+                    <range>0,512</range>
+                </param>
+                <param name="NotchSensor3" type="u32" hint="">
+                    <value>9,1,256,0,0,40,0</value>
+                    <range>0,512</range>
+                </param>
+            </modules>
+            <modules id="Ellipse" enable="true" hint="">
+                <param name="convexHullThd" type="u32" hint="">
+                    <value>250</value>
+                    <range>0,1000</range>
+                </param>
+            </modules>
+            <modules id="CoordMatch" enable="true" hint="">
+                <param name="disLimit" type="u32" hint="">
+                    <value>10240</value>
+                    <range>0,65535</range>
+                </param>
+                <param name="ratioLimit" type="u32" hint="">
+                    <value>7</value>
+                    <range>0,100</range>
+                </param>
+                <param name="accLimit" type="u32" hint="">
+                    <value>5120</value>
+                    <range>0,65535</range>
+                </param>
+                <param name="jumpLimit" type="u32" hint="">
+                    <value>2560</value>
+                    <range>0,65535</range>
+                </param>
+                <param name="touchZLimit" type="u32" hint="">
+                    <value>10</value>
+                    <range>0,65535</range>
+                </param>
+                <param name="touchZMin" type="u32" hint="">
+                    <value>3</value>
+                    <range>0,65535</range>
+                </param>
+                <param name="downDebounceFrames" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,20</range>
+                </param>
+                <param name="upDebounceFrames" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,20</range>
+                </param>
+            </modules>
+            <modules id="TouchSize" enable="true" hint="">
+                <param name="pixelDis" type="u32" hint="">
+                    <value>440</value>
+                    <range>0,500</range>
+                </param>
+
+                <param name="pixelDisFactor" type="u32" hint="">
+                    <value>103</value>
+                    <range>0,250</range>
+                </param>
+
+                <param name="pixelDisFloatFactor" type="u32" hint="">
+                    <value>105</value>
+                    <range>0,250</range>
+                </param>
+            </modules>
+        </panel>
+    </device>
+</algo>

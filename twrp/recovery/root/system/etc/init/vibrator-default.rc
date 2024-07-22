@@ -18,6 +18,7 @@ on boot
     chown system system /sys/class/leds/vibrator/oplus_activate
     chown system system /sys/class/leds/vibrator/oplus_duration
     chown system system /sys/class/leds/vibrator/oplus_state
+    chown system system /sys/class/leds/vibrator/oplus_brightness
     chown system system /sys/class/leds/vibrator/f0
     chown system system /sys/class/leds/vibrator/cali
     chown system system /sys/class/leds/vibrator/vmax
@@ -39,13 +40,9 @@ on boot
     chown system system /sys/class/leds/vibrator/f0_data
     chown system system /sys/class/leds/vibrator/rtp_going
 #endif /* OPLUS_FEATURE_CHG_BASIC */
-
-service vendor.oplus.vibrator /system/bin/vendor.oplus.hardware.vibrator-service
+service vendor.oplus.vibrator /odm/bin/hw/vendor.oplus.hardware.vibrator-service
     class late_start
-    user root
-    group root input
+    user system
+    group system input
     setenv RICHTAP_DEVICE_PATH /dev/awinic_haptic
     setenv ENV_RICHTAP_CONFIG_PATH /odm/etc/aac_richtap.config
-    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin:/odm/lib64:/odm/lib
-    disabled
-    seclabel u:r:recovery:s0
