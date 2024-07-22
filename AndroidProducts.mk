@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_waffle.mk
+    $(LOCAL_DIR)/twrp_corvette.mk

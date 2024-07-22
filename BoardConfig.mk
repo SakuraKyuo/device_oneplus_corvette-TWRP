@@ -27,7 +27,7 @@
 -include $(COMMON_PATH)/BoardConfigCommon.mk
 
 # Recovery
-TARGET_OTA_ASSERT_DEVICE := waffle
+TARGET_OTA_ASSERT_DEVICE := corvette
 
 # TWRP specific build flags
 TW_FRAMERATE := 120
