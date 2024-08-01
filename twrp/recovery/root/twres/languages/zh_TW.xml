@@ -733,6 +733,9 @@
 		<string name="rescue_party2"> 2. 格式化 Data 分割區；</string>
 		<string name="rescue_party3"> 3. 重新刷入您的 ROM。</string>
 		<string name="rescue_party4">報告的問題為：</string>
+		<string name="custom_install_confirm">是否安装 {1} ?</string>
+		<string name="custom_installing">正在安装 {1}...</string>
+		<string name="custom_installing_complete">{1} 安装完成！</string>
 		<string name="auto_disable_avb2">刷入 ROM 後自動停用 AVB2.0</string>
 		<string name="disable_avb2">停用 AVB2.0</string>
 		<string name="disable_avb2_confirm">是否停用 AVB2.0？ </string>
