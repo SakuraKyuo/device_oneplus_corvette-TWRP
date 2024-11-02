@@ -781,6 +781,7 @@
 		<string name="custom_installing_complete">Installed {1} !</string>
 		<string name="install_magisk">Install Magisk</string>
 		<string name="install_boot_permissive">Install Boot Permissive GKI</string>
+		<string name="install_boot_enforcing">Install Boot Enforcing GKI</string>
 		<string name="auto_disable_avb2">Automatically disable AVB2.0 after flashing ROM</string>
 		<string name="disable_avb2">Disable AVB2.0</string>
 		<string name="disable_avb2_confirm">Disable AVB2.0?</string>
