@@ -7,6 +7,18 @@
 # Userdata/Metadata partitions
 /metadata       ext4    /dev/block/by-name/metadata                                         flags=display=Metadata
 
+# OnePlus Vendor Partitions (Dynamic Partitions)
+my_product                                       /my_product           erofs   ro                                                wait,slotselect,logical,first_stage_mount,nofail
+my_engineering                                   /my_engineering       erofs   ro                                                wait,slotselect,logical,first_stage_mount,nofail
+my_company                                       /my_company           erofs   ro                                                wait,slotselect,logical,first_stage_mount,nofail
+my_carrier                                       /my_carrier           erofs   ro                                                wait,slotselect,logical,first_stage_mount,nofail
+my_region                                        /my_region            erofs   ro                                                wait,slotselect,logical,first_stage_mount,nofail
+my_heytap                                        /my_heytap            erofs   ro                                                wait,slotselect,logical,first_stage_mount,nofail
+my_stock                                         /my_stock             erofs   ro                                                wait,slotselect,logical,first_stage_mount,nofail
+my_preload                                       /my_preload           erofs   ro                                                wait,slotselect,logical,first_stage_mount,nofail
+my_bigball                                       /my_bigball           erofs   ro                                                wait,slotselect,logical,first_stage_mount,nofail
+my_manifest                                      /my_manifest          erofs   ro                                                wait,slotselect,logical,first_stage_mount,nofail
+
 # Other partitions
 /boot           emmc    /dev/block/bootdevice/by-name/boot                                  flags=slotselect
 /recovery       emmc    /dev/block/bootdevice/by-name/recovery                              flags=slotselect;display="Recovery";backup=1;flashimg=1
