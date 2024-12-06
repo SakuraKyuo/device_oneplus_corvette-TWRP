@@ -51,7 +51,34 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # A/B updater updatable partitions list. Keep in sync with the partition list
 # with "_a" and "_b" variants in the device. Note that the vendor can add more
 # more partitions to this list for the bootloader and radio.
-AB_OTA_PARTITIONS ?= boot vendor_boot recovery vendor_dlkm dtbo vbmeta super init_boot system_dlkm
+
+# Main Logical Partitions
+AB_OTA_PARTITIONS := \
+    my_product \
+    my_engineering \
+    my_company \
+    my_carrier \
+    my_region \
+    my_heytap \
+    my_stock \
+    my_preload \
+    my_bigball \
+    my_manifest \
+    odm \
+    product \
+    system \
+    system_ext \
+    vendor
+
+AB_OTA_PARTITIONS += \
+    boot \
+    vendor_boot \
+    recovery \
+    vendor_dlkm \
+    dtbo \
+    vbmeta \
+    init_boot \
+    system_dlkm
 
 # A/B related packages
 PRODUCT_PACKAGES += update_engine \
