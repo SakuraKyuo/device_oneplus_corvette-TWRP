@@ -55,6 +55,10 @@ on boot
     start variant-script
     start overrideprops
 
+    # Update touchscreen firmware
+    chown system system /proc/touchpanel/tp_fw_update
+    write /proc/touchpanel/tp_fw_update 1
+
 on property:twrp.modules.loaded=true
     # Mount persist
     mkdir /mnt/vendor/persist
